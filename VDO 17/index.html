@@ -1,0 +1,95 @@
+⭐💻Vdo 17 CSS selector demo 
+<!-- 🌟📤Checkout Vdo 17 extra notes link for more pseudo selectrors -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector demo</title>
+    <style>
+        div{
+            color: green;
+        }
+       
+
+        /* Class selector */
+        .red{
+           background-color:  red;
+        }
+
+        /* id selector */
+        #cyan{
+            background-color: cyan;
+        }
+
+        /* child selector */
+        div > p
+        {
+            color: red;
+            background-color: rgb(255, 255, 0); 
+        }
+
+        /* 🌟If decendent selector is used then child selector will not work */
+        /* decendent selector */
+        div p{
+            color: blue;
+            background-color: brown;
+        }
+        /* universal selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* pseudo selector */
+        /* if you want to change the color of link then use pseudo selector */
+        /* visited color if you want to change the color of link after visiting the link */ 
+        a:visited{
+            color: cyan;
+        }
+
+        /* default color of link */
+        a:link{
+            color: red;
+        }
+
+        /* active color if you want to change the color of link after clicking the link */
+        a:active{
+           background-color: yellow;
+        }
+        /* Hover color if you want to change the color of link after hovering the link */
+        a:hover{
+            background-color: green;
+        }
+
+        /* first child selector */
+        p:first-child{
+           background-color: cyan;
+        }
+
+    </style>
+</head>
+<body>
+    <main class="one">
+        <p>This is First Child</p>
+        <p>
+            This is Second Child
+        </p>
+    </main>
+    <div>this is normal</div>
+    <div class="red">this is a demo with class selector</div>
+    <div id="cyan" >this is id selector demo   </div>
+    <div>
+        <p>This is Child selector example using paragraph</p>
+    </div>
+    <div>
+        <article>
+            <p>This is decendent selector example using paragraph</p>
+        </article>
+    </div>
+    <a href="http://www.google.com">Go To Google</a>
+    <a href="http://www.facebook.com">Go To Facebook</a>
+
+</body>
+</html>
